@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+.vscode/
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.pem
+*.key
+k3s.yaml
+infra/ansible/inventory.ini
