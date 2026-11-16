@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: devsecops-demo
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: ['K8S_PRIVATE_IP:30080']
